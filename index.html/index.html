@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DEADTEAM Store</title>
+<style>
+  /* Reset and base styles */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #eee;
+  }
+  header {
+    background: #1e1e1e;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #d72631;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    color: #d72631;
+  }
+  nav {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  nav a {
+    margin: 0 15px;
+    color: #d72631;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  section {
+    margin-bottom: 3rem;
+  }
+  h2 {
+    border-bottom: 2px solid #d72631;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  /* Products grid */
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 1.5rem;
+  }
+  .product {
+    background: #222;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 0 10px #d72631aa;
+  }
+  .product img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+  .product h3 {
+    margin: 0 0 0.5rem;
+  }
+  .product p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .buy-button {
+    background: #d72631;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .buy-button:hover {
+    background: #b31f28;
+  }
+  /* About and contact */
+  .about-text, .contact-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  /* Social links */
+  .social-links a {
+    margin: 0 12px;
+    color: #d72631;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1e1e1e;
+    border-top: 2px solid #d72631;
+    font-size: 0.9rem;
+  }
+  /* Responsive */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>DEADTEAM</h1>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section id="products">
+    <h2>Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200?text=Deadteam+T-Shirt" alt="Deadteam T-Shirt" />
+        <h3>Deadteam T-Shirt</h3>
+        <p>High-quality cotton tee with the Deadteam logo. Sizes S to XXL.</p>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YOURBUTTONID1" class="buy-button" target="_blank" rel="noopener">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200?text=Deadteam+Hoodie" alt="Deadteam Hoodie" />
+        <h3>Deadteam Hoodie</h3>
+        <p>Comfortable hoodie with a bold Deadteam design. Warm and stylish.</p>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YOURBUTTONID2" class="buy-button" target="_blank" rel="noopener">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200?text=Deadteam+Cap" alt="Deadteam Cap" />
+        <h3>Deadteam Cap</h3>
+        <p>Adjustable cap featuring the Deadteam emblem. Perfect for everyday wear.</p>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YOURBUTTONID3" class="buy-button" target="_blank" rel="noopener">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="about-text">
+      DEADTEAM is a brand committed to delivering premium, stylish merchandise that represents the spirit and passion of our community.
+      We believe in quality, comfort, and bold design. Join the team and wear your identity proudly.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="contact-text">
+      Have questions or want to collaborate? Reach out to us at:  
+      <a href="mailto:deadteam.business@gmail.com" style="color:#d72631;">deadteam.business@gmail.com</a>
+    </p>
+    <div class="social-links">
+      <a href="https://discord.gg/yourserver" target="_blank" rel="noopener">Discord</a> |
+      <a href="https://instagram.com/deadteam" target="_blank" rel="noopener">Instagram</a> |
+      <a href="https://tiktok.com/@deadteam" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 DEADTEAM. All rights reserved.
+</footer>
+</body>
+</html>
